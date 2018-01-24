@@ -1,0 +1,78 @@
+<%# <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+<script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script> %>
+<div class="jumbotron">
+  <h2><%= gettext "Welcome to %{name}", name: "Twitter!" %></h2>
+  <p class="lead">Distributed Systems Project 4 Part 2</p>
+</div>
+<div style = "display:block" id= "hideuserdata">
+  <div class="row marketing">
+    <div class="col-lg-6">
+      Username: <input type="text" id="fname"><br>
+      <br>
+      Password: <input type="password" id="password"><br>
+    </div>
+    <br>
+    <div class="col-lg-6">
+    <div class="col-lg-3">
+      <input type="button" value="Register" id="register">
+    </div>
+    <div class="col-lg-3">
+      <input type="button" value="Login" id="login">
+    </div>
+    </div>
+    </form>
+  </div>
+  </div>
+  <div style="display : none" id = "afterLogin">
+	  <div class="row marketing">
+		<div class="col-lg-6">
+		  Tweet: <input type="text" id="tweet" placeholder="Tweet something!" ><br>
+		</div>
+		<div class="col-lg-6">
+		  <input type="button" value="Tweet" id="sendTweet">
+		</div>
+	  </div>
+	  <div class="row marketing"> 
+		<div class="col-lg-6">
+		  Follow: <input type="text" id="subscribeTo"><br>
+		</div>
+		<div class="col-lg-6">
+		  <input type="button" value="Follow" id="subscribe">
+		</div>
+	  </div>
+	  <div class="row marketing">
+		<div class="col-lg-6">
+		  <input type="button" value="Get Tweets" id="getTweets">
+		</div>
+		<div class="col-lg-6" >
+			<ol style ="display : none" id="tweetsList"></ol>
+			<br>
+			<div style="display : none" id = "retweetDiv">
+			  Retweet No: <input type="text" id="retweetNo">
+			  <input type="button" value="Retweet this!" id="retweet">
+			</div>
+
+			<!-- <textarea id = "tweets"> </textarea> -->
+		  </div>
+	  </div>  
+	  <div class="row marketing">
+		<div class="col-lg-6">
+		  Query Mentions: <input type="text" id="mention"><br>
+		</div>
+		<div class="col-lg-6">
+		  <input type="button" value="Query" id="queryMentions">
+		</div>
+		  <li style ="display : none" id="mentionsList"></li>
+		</div>
+	  <div class="row marketing">
+		<div class="col-lg-6">
+		  Query Hashtags: <input type="text" id="hashtag"><br>
+		</div>
+		<div class="col-lg-6">
+		  <input type="button" value="Query" id="queryHashtags">
+		</div>
+		  <li style ="display : none"  id="hashtagsList"></li>
+		  <!-- <textarea id = "tweets"> </textarea> -->
+		</div>
+	</div>
